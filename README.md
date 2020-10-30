@@ -6,9 +6,11 @@
 
 This is a demo API that uses the Faker gem to seed a database with book titles, authors, and prices. The titles are coffee blend names from Faker preceded by 'The'.
 
-The '/books' endpoint will display a json object of all the books in the database. Visiting the '/paginate' endpoint will display the first three entries. To see the next three, append '?page=2' (or '?page=3', etc.) to the '/paginate' url. 
+The '/books' endpoint will display a json object of all the books in the database. 
 
-It's also possible to search by the titles and authors of books. To search, append '?title=' or '?author=' to the index url, followed by a search term. Incomplete terms will work, and it's not case sensitive. For instance, searching 'http://localhost:3000/books?title=sol' will return all books with the word 'Solstice' in the title. If there aren't any matches, the API will return an empty array.
+Visiting the '/paginate' endpoint will display the first three entries. To see the next three, append '?page=2' (or '?page=3', etc.) to the '/paginate' url. 
+
+It's also possible to search by the titles and authors of books. To search, append '?title=' or '?author=' to the index url, followed by a search term. Incomplete terms will work, and it's not case sensitive. For instance, searching 'localhost:3000/books?title=sol' will return all books with the word 'Solstice' in the title. If there aren't any matches, the API will return an empty array.
 
 The '/titles' endpoint will return an array of just the titles.
 
@@ -32,9 +34,9 @@ To run on your localhost, clone this repo using:
 
 ```git clone https://github.com/alma-frankenstein/winter_reads_api reads```
 
-Cd to the reads directory.
+cd to the reads directory.
 
-Install gems with with ```gem install bundler```
+Install gems with ```gem install bundler```
 
 Each time the Gemfile is changed, run ```bundle install```
 
