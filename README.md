@@ -15,17 +15,15 @@ This is a demo API that uses the Faker gem to seed a database with book titles, 
 
 ## Setup
 
-Clone this repo using:
+To run on your localhost, clone this repo using:
 
-```git clone https://github.com/alma-frankenstein/mario_database mario```
+```git clone https://github.com/alma-frankenstein/winter_reads_api reads```
 
-Cd to the mario directory.
+Cd to the reads directory.
 
-Install Bundler with ```gem install bundler```
+Install gems with with ```gem install bundler```
 
 Each time the Gemfile is changed, run ```bundle install```
-
-Create the databases with ```rake db:create```
 
 Migrate the database and test database with ```rake db:migrate``` and ```rake db:test:prepare```
 
@@ -33,19 +31,15 @@ Seed the databases: ```rake db:seed```
 
 View the app in the server: ```rails s```
 
-To make a certain user an admin:
-run ```rails c``` to open a ruby console
-```User.all``` to see the users and their IDs
-```User.find(id).update :admin => true``` where 'id' is the integer of their ID number
 
 ## Technologies Used
 
 * Ruby
 * rspec
 * Rails
-* Capybara
-* SQL
-* devise
+* Postgresql
+* FactoryBot
+* Faker
 
 ## Contact Details
 
