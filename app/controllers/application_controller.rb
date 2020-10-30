@@ -9,7 +9,7 @@ class ApplicationController < ActionController::API
     json_response({ message: exception.message }, :unprocessable_entity)
   end
 
-  # rescue_from ActiveRecord::ParseError do |exception|
-  #   json_response({ message: exception.message }, :not_found) # bad request
+  # rescue_from ActionDispatch::Http::Parameters::ParseError do |exception|
+  #   json_response({ message: exception.message }, :bad_request)
   # end
 end
