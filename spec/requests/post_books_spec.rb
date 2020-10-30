@@ -10,6 +10,10 @@ describe "add a book through post to /books route", :type => :request do
     expect(JSON.parse(response.body)['title']).to eq('The Seas')
   end
 
+  it 'returns author of the book' do
+    expect(JSON.parse(response.body)['author']).to eq('Sam Hunt')
+  end
+
   it 'returns created status' do
     expect(response).to have_http_status(:created)
   end
