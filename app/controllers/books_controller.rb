@@ -1,7 +1,13 @@
 class BooksController < ApplicationController
   
   def index
-    @books = Book.all
+    if params[:title]
+      title = params[:title]
+    end
+    if params[:author]
+      author = params[:author]
+    end
+    @books = Book.search(title, author)
     json_response(@books)
   end
 
