@@ -4,7 +4,11 @@
 
 ## Description
 
-This is a demo API that uses the Faker gem to seed a database with book titles, authors, and prices. Visiting the main page will display the first three entries. To see the next three, append '?page=2' to the url. It can also return a random selection, using the '/random' endpoint.
+This is a demo API that uses the Faker gem to seed a database with book titles, authors, and prices. 
+
+The '/books' endpoint will display a json object of all the books in the database. Visiting the '/paginate' endpoint will display the first three entries. To see the next three, append '?page=2' (or '?page=3', etc.) to the '/paginate' url. 
+
+The API can also return a random selection, using the '/random' endpoint.
 
 ## Specs
 
