@@ -15,10 +15,10 @@ class BooksController < ApplicationController
     json_response(@book, :created)
   end
 
-  # def random
-  #   @book = Book.all.sample
-  #   json_response(@book)
-  # end
+  def random
+    @book = Book.all.sample
+    json_response(@book)
+  end
 
   def update
     @book = Book.find(params[:id])
