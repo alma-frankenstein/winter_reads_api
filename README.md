@@ -12,6 +12,8 @@ It's also possible to search by the titles and authors of books. To search, appe
 
 The '/titles' endpoint will return an array of just the titles.
 
+Visit the endpoint '/bargain' to see three of the least expensive books.
+
 The API can also return a random selection, using the '/random' endpoint.
 
 ## Specs
