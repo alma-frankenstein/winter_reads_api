@@ -1,7 +1,8 @@
 class BooksController < ApplicationController
   
   def index
-    @books = Book.all
+    #@books = Book.all
+    @books = Book.paginate(page:params[:page], per_page: 3)
     json_response(@books)
   end
 
