@@ -25,6 +25,9 @@ The API can also return a random selection, using the '/random' endpoint.
 
 ## Setup
 
+This app is deployed to Heroku; you can view it or make API calls from [https://winter-reading-api.herokuapp.com/](https://winter-reading-api.herokuapp.com/)
+
+
 To run on your localhost, clone this repo using:
 
 ```git clone https://github.com/alma-frankenstein/winter_reads_api reads```
