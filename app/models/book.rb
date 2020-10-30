@@ -1,5 +1,5 @@
 class Book < ApplicationRecord
-  before_save(:titleize_book)
+  before_create(:titleize_book)
 
   validates :title, :author, :price, presence: true
 
@@ -8,7 +8,7 @@ class Book < ApplicationRecord
 
   private
   def titleize_book
-    self.name = self.name.titleize
+    self.title = self.title.titleize
   end
 end
 
