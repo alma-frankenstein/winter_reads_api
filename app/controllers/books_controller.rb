@@ -11,6 +11,15 @@ class BooksController < ApplicationController
     json_response(@books)
   end
 
+  def titles
+    @titles_only = []
+    @books = Book.all
+    @books.each do |book|
+      @titles_only.push(book['title'])
+    end
+    json_response(@titles_only)
+  end
+
   def paginate
     @books = Book.paginate(page:params[:page], per_page: 3)
     json_response(@books)
