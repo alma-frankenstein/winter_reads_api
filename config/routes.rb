@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/random' => 'books#random'
   get '/paginate' => 'books#paginate'
   get '/titles' => 'books#titles'
+  get '/bargain' => 'books#bargain'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

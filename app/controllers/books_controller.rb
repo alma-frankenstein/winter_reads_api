@@ -25,6 +25,11 @@ class BooksController < ApplicationController
     json_response(@books)
   end
 
+  def bargain
+    @bargains = Book.bargain
+    json_response(@bargains)
+  end
+
   def show
     @book = Book.find(params[:id])
     json_response(@book)
